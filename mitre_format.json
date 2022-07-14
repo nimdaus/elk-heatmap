@@ -1,0 +1,41 @@
+{
+    "name": "Huntress Process Insights layer",
+    "versions": {
+		"attack": "11",
+		"navigator": "4.6.5",
+		"layer": "4.3"
+	},
+    "domain": "enterprise-attack",
+    "description": "Generated ATT&CK coverage provided by enabled Huntress ELK detection rules.",
+    "gradient": {
+        "colors": [
+            "#ff6666",
+			"#ff66f4",
+			"#66d2ff"
+        ],
+        "maxValue": 100,
+        "minValue": 0
+    },
+    "legendItems": [
+		{
+			"color": "#18bc9c",
+			"label": "Covered"
+		},
+		{
+			"color": "#e74c3c",
+			"label": "Not Currently Covered"
+		}
+	],
+    "techniques": [
+    ],
+	"links": [
+		{
+			"label": "Huntress",
+			"url": "https://www.huntress.com"
+		}
+	],
+	"showTacticRowBackground": true,
+	"tacticRowBackground": "#01C5D1",
+	"selectTechniquesAcrossTactics": true,
+	"selectSubtechniquesWithParent": false
+}

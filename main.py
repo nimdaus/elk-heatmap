@@ -130,7 +130,7 @@ navigator_layer.layer.legendItems = legend_items
 
 navigator_layer.layer.metadata = [
     dict(name='Generated', value=f"{time.strftime('%Y%m%d')}"),
-    dict(name='Usage', value=f"INTERNAL ONLY")
+    dict(name='Usage', value=f"{os.getenv('USAGE')}")
 ]
 navigator_layer.layer.techniques = new_techniques
 

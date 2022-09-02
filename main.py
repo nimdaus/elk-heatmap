@@ -125,7 +125,7 @@ navigator_layer.layer.gradient = dict(
 )
 legend_items = []
 for iteration_no, hex_color in enumerate(json.loads(os.environ['DESC_GRADIENT'])):
-    legend_items.append(dict(label=f'{(iteration_no+1)}/{len(json.loads(os.environ["DESC_GRADIENT"]))}', color=f'{hex_color}'))
+    legend_items.append(dict(label=f"{int(round((rev_score(score=iteration_no + 1, max=len(json.loads(os.environ['DESC_GRADIENT']))))/len(json.loads(os.environ['DESC_GRADIENT']))*100))}%", color=f'{hex_color}'))
 navigator_layer.layer.legendItems = legend_items
 
 navigator_layer.layer.metadata = [
